@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="{{ description }}"/>
+  <meta name="keywords" content="{{ keywords }}"/>
+  <meta name="author" content="{{ author }}"/>
+  <title>{{ title }}</title>
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@pacoreyes"/>
+  <meta name="twitter:title" content="{{ title }}"/>
+  <meta name="twitter:description" content="{{ description }}"/>
+  <meta name="twitter:creator" content="@pacoreyes"/>
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+  <meta name="twitter:image:src" content="https://www.example.com/image.jpg"/>
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{ title }}"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://www.example.com/"/>
+  <meta property="og:image" content="https://example.com/image.jpg"/>
+  <meta property="og:description" content="{{ description }}"/>
+  <meta property="og:site_name" content="Site Name, i.e. Moz"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="article:author" content=""/>
+  <meta property="article:published_time" content="2013-09-17T05:59:00+01:00"/>
+  <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00"/>
+  <meta property="article:section" content="Article Section"/>
+  <meta property="article:tag" content="Article Tag"/>
+  <meta property="fb:admins" content="Facebook numeric ID"/>
+
+  <link rel="canonical" href="https://www.example.com/"/>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+  <!-- Schema.org for Google -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Juan-Francisco (Paco) Reyes",
+      "jobTitle": "Web Developer",
+      "url": "https://www.example.com/",
+      "sameAs": [
+        "https://www.facebook.com/your-profile",
+        "https://twitter.com/your-profile",
+        "https://instagram.com/your-profile",
+        "https://linkedin.com/in/your-profile"
+      ]
+    }
+  </script>
+</head>
+<body>
+  {% include "layouts/header.njk" %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  {% include "layouts/footer.njk" %}
+</body>
+</html>
