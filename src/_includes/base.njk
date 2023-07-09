@@ -33,7 +33,7 @@
   <meta property="fb:admins" content="Facebook numeric ID"/>
 
   <link rel="canonical" href="https://www.example.com/"/>
-  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <link rel="stylesheet" href="/css/styles.css"/>
 
   <!-- Schema.org for Google -->
   <script type="application/ld+json">
@@ -53,10 +53,14 @@
   </script>
 </head>
 <body>
-  {% include "layouts/header.njk" %}
-  <main>
-    {% block content %}{% endblock %}
-  </main>
-  {% include "layouts/footer.njk" %}
+<header>
+  {% include "header.njk" %}
+</header>
+<main>
+  {{ content | safe }}
+</main>
+<footer>
+  {% include "footer.njk" %}
+</footer>
 </body>
 </html>

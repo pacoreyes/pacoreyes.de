@@ -8,6 +8,11 @@ module.exports = function (eleventyConfig) {
             // any other options go here
         });
     });
+    // Copy the `css` directory to the output
+    eleventyConfig.addPassthroughCopy("css");
+
+    // Watch the `css` directory for changes
+    eleventyConfig.addWatchTarget("css");
 
     return {
         dir: {
