@@ -35,6 +35,13 @@
   <link rel="canonical" href="https://www.example.com/"/>
   <link rel="stylesheet" href="/css/styles.css"/>
 
+  <script type="module">
+    import {setupUI} from "../js/main.mjs";
+    setupUI();
+  </script>
+
+  <meta name="robots" content="noindex"/>
+
   <!-- Schema.org for Google -->
   <script type="application/ld+json">
     {
@@ -50,16 +57,6 @@
         "https://linkedin.com/in/your-profile"
       ]
     }
-  </script>
-  <script>
-      document.getElementById('nav-icon').addEventListener('click', function() {
-          var menu = document.getElementById('menu-tray');
-          if (menu.hasAttribute('hidden')) {
-              menu.removeAttribute('hidden');
-          } else {
-              menu.setAttribute('hidden', '');
-          }
-      });
   </script>
 </head>
 <body>

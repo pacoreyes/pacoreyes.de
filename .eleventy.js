@@ -8,11 +8,13 @@ module.exports = function (eleventyConfig) {
             // any other options go here
         });
     });
-    // Copy the `css` directory to the output
-    eleventyConfig.addPassthroughCopy("css");
+    // Copy the `css` and js code directory to the output
+    eleventyConfig.addPassthroughCopy("src/css");
+    eleventyConfig.addPassthroughCopy("src/js");
 
-    // Watch the `css` directory for changes
-    eleventyConfig.addWatchTarget("css");
+    // Watch the `css` and js code directory for changes
+    eleventyConfig.addWatchTarget("src/css");
+    eleventyConfig.addWatchTarget("src/js");
 
     return {
         dir: {
