@@ -5,11 +5,10 @@ description: Juan-Francisco (Paco) Reyes's Curriculum Vitae
 keywords: Juan-Francisco (Paco) Reyes, Paco Reyes, interaction designer, front-end, UI engineer
 author: Juan-Francisco (Paco) Reyes
 ---
-<h1>Curriculum Vitae</h1>
+<h1>{{ title }}</h1>
 {% block content %}
-  <h2>{{ pageTitle }}</h2>
   <section id="personal-information">
-    <h3>Personal Information</h3>
+    <h2>Personal Information</h2>
     <ul>
       <li>Name: {{ name }}</li>
       <li>Email: {{ email }}</li>
@@ -19,12 +18,12 @@ author: Juan-Francisco (Paco) Reyes
   </section>
 
   <section id="summary">
-    <h3>Professional Summary</h3>
+    <h2>Professional Summary</h2>
     <p>{{ summary }}</p>
   </section>
 
   <section id="skills">
-    <h3>Skills</h3>
+    <h2>Skills</h2>
     <ul>
       {% for skill in skills %}
         <li>{{ skill }}</li>
@@ -33,10 +32,10 @@ author: Juan-Francisco (Paco) Reyes
   </section>
 
   <section id="experience">
-    <h3>Professional Experience</h3>
+    <h2>Professional Experience</h2>
     {% for job in jobs %}
       <div class="job">
-        <h4>{{ job.title }}</h4>
+        <h3>{{ job.title }}</h3>
         <p>{{ job.company }}, {{ job.location }}</p>
         <p>{{ job.start }} - {{ job.end }}</p>
         <ul>
@@ -49,10 +48,10 @@ author: Juan-Francisco (Paco) Reyes
   </section>
 
   <section id="projects">
-    <h3>Projects</h3>
+    <h2>Projects</h2>
     {% for project in projects %}
       <div class="project">
-        <h4>{{ project.name }}</h4>
+        <h3>{{ project.name }}</h3>
         <p>{{ project.description }}</p>
         <p>Tech Stack: {{ project.techStack }}</p>
         <p>GitHub: {{ project.githubLink }}</p>
@@ -64,10 +63,10 @@ author: Juan-Francisco (Paco) Reyes
   </section>
 
   <section id="education">
-    <h3>Education</h3>
+    <h2>Education</h2>
     {% for degree in education %}
       <div class="degree">
-        <h4>{{ degree.degree }}</h4>
+        <h3>{{ degree.degree }}</h3>
         <p>{{ degree.university }}, {{ degree.location }}</p>
         <p>{{ degree.start }} - {{ degree.end }}</p>
       </div>
@@ -75,7 +74,7 @@ author: Juan-Francisco (Paco) Reyes
   </section>
 
   <section id="publications">
-    <h3>Publications</h3>
+    <h2>Publications</h2>
     {% for publication in publications %}
       <div class="publication">
         <p>{{ publication.title }}</p>
@@ -87,7 +86,7 @@ author: Juan-Francisco (Paco) Reyes
   </section>
 
   <section id="awards">
-    <h3>Awards and Honors</h3>
+    <h2>Awards and Honors</h2>
     <ul>
       {% for award in awards %}
         <li>{{ award }}</li>
@@ -96,7 +95,7 @@ author: Juan-Francisco (Paco) Reyes
   </section>
 
   <section id="languages">
-    <h3>Languages</h3>
+    <h2>Languages</h2>
     <ul>
       {% for language in languages %}
         <li>{{ language }}</li>
@@ -105,7 +104,7 @@ author: Juan-Francisco (Paco) Reyes
   </section>
 
   <section id="certifications">
-    <h3>Certifications</h3>
+    <h2>Certifications</h2>
     <ul>
       {% for certification in certifications %}
         <li>{{ certification.name }} - {{ certification.issuer }}</li>
@@ -114,7 +113,7 @@ author: Juan-Francisco (Paco) Reyes
   </section>
 
   <section id="references">
-    <h3>References</h3>
+    <h2>References</h2>
     <p>Available upon request</p>
   </section>
 {% endblock %}
