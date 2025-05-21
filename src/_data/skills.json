@@ -1,0 +1,61 @@
+{
+  "Development": [
+    "Python",
+    "JavaScript",
+    "Flask",
+    "Node.js",
+    "SQL",
+    "NoSQL",
+    "OOP",
+    "API Development",
+    "Web Design"
+  ],
+  "AI and LLMs": [
+    "NLP",
+    "ML",
+    "LLMs",
+    "Deep Learning",
+    "Fine-tuning",
+    "PyTorch",
+    "SciKit-Learn",
+    "SHAP",
+    "Transformer Interpret",
+    "Hugging Face",
+    "Generative AI",
+    "Prompt Engineering",
+    "OpenAI API",
+    "LlaMA",
+    "RAG",
+    "spaCy",
+    "Explainable AI",
+    "LangChain",
+    "LlamaIndex",
+    "Data Science",
+    "Statistical Analysis",
+    "Information Extraction",
+    "Computational Linguistics",
+    "Machine Learning"
+  ],
+  "Cloud and MLOps": [
+    "AWS",
+    "Google Cloud Platform",
+    "Docker",
+    "Pinecone",
+    "FAISS",
+    "Neo4j",
+    "Knowledge Graph"
+  ],
+  "User Research": [
+    "UX",
+    "Usability Engineering",
+    "Interaction Design",
+    "User-Centered Design"
+  ],
+  "Soft Skills": [
+    "Communication",
+    "Presentation Skills",
+    "Analytical Thinking",
+    "Team Building",
+    "Project Management"
+  ]
+}

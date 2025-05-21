@@ -1,38 +1,114 @@
-# pacoreyes.de
+# pacoreyes.de - Personal Website
 
-Welcome to the repository for my personal website! This site is a comprehensive showcase of my professional journey, featuring my portfolio, articles, and other content that I've created and collected over the years.
+This repository contains the source code for my personal website, [pacoreyes.de](https://pacoreyes.de), showcasing my professional journey as an AI Engineer and machine learning expert.
 
-## Contents
+## Technology Stack
 
-1. **Portfolio:** This section includes an overview of my projects and contributions. Here you can find details of my work, the technologies used, and the impacts they have had.
+- **Static Site Generator**: [Eleventy (11ty)](https://www.11ty.dev/) - A simpler static site generator
+- **Templating**: Nunjucks (.njk) for flexible templating
+- **Styling**: Custom CSS with modern features
+- **Deployment**: Firebase Hosting for reliable and fast content delivery
+- **Code Quality**: ESLint, Stylelint, and Prettier for consistent code style
+- **Build Process**: NPM scripts for building, serving, and quality checks
+- **Multi-language Support**: Separate content directories for English, German, and Spanish
 
-2. **Articles:** As a passionate learner and writer, I have penned numerous articles on a variety of topics. In this section, you can find articles I've written about technology, programming, personal development, and more.
+## Project Structure
 
-3. **About Me:** Here, you'll find more information about my background, my skillset, and my professional journey.
+- `/src`: Source files for the website
+  - `/_data`: JSON and JS data files that power the site
+  - `/_includes`: Reusable template components
+  - `/css`: Styling for the website
+  - `/images`: Website images and icons
+  - `/en`: English language content
+  - `/de`: German language content
+  - `/es`: Spanish language content
+- `/public`: Generated output (not tracked in git)
 
-4. **Contact:** If you're interested in reaching out to me for professional opportunities, collaborations, or just to say hi, you'll find my contact information in this section.
+## Local Development
 
-## Technologies Used
+### Prerequisites
 
-The website is built using [11ty](https://www.11ty.dev/) (Eleventy), a simpler static site generator, with [Firebase Hosting](https://firebase.google.com/products/hosting) for deployment. The UI is handcrafted with plain JavaScript, HTML, and CSS, ensuring optimal performance and compatibility.
+- Node.js (v14 or newer)
+- npm
 
-## Running Locally
+### Setup
 
-To run this website locally, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/pacoreyes/pacoreyes.de.git
+   cd pacoreyes.de
+   ```
 
-1. Clone this repository to your local machine.
-2. Navigate to the project directory.
-3. If you haven't done so, install 11ty: `npm install -g @11ty/eleventy`
-4. Run the following command: `eleventy --serve`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-This will build and serve the website locally for you to explore and test.
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+   This will start a local server at http://localhost:8080
 
-## Contributing
+### Build
 
-While this is a personal website, I'm always open to feedback and suggestions. If you have any ideas on how I could improve the site, please feel free to open an issue or a pull request.
+To build the site for production:
+
+```bash
+npm run build
+```
+
+## Deployment
+
+The website is deployed to Firebase Hosting. After building the site:
+
+```bash
+firebase deploy
+```
+
+## Code Quality
+
+Maintain code quality with:
+
+```bash
+npm run quality
+```
+
+This runs linting and formatting checks on the codebase.
+
+## SEO Strategy
+
+The website implements a comprehensive SEO strategy with a focus on multi-language support:
+
+### Multi-language Implementation
+
+- **Language-specific URLs**: Each language has its own URL path (`/en/`, `/de/`, `/es/`)
+- **Language Prioritization**: English is set as the primary language (priority 1.0 in sitemap.xml), with German and Spanish as secondary languages
+- **Default Language Redirection**: The root URL redirects to the most appropriate language based on user preferences
+
+### SEO Features
+
+- **Structured Data**: JSON-LD implementation for rich search results using Schema.org (Person type)
+- **Meta Tags**: Comprehensive meta tags including title, description, and keywords for each language
+- **Open Graph Protocol**: Social media optimization with og: tags for better sharing experience
+- **Twitter Cards**: Enhanced Twitter sharing with twitter: meta tags
+- **Canonical URLs**: Proper canonical URL implementation to avoid duplicate content issues
+- **Hreflang Tags**: Language annotations for international SEO:
+  ```html
+  <link rel="alternate" hreflang="x-default" href="https://www.pacoreyes.de/" />
+  <link rel="alternate" hreflang="en" href="https://www.pacoreyes.de/en/" />
+  <link rel="alternate" hreflang="de" href="https://www.pacoreyes.de/de/" />
+  <link rel="alternate" hreflang="es" href="https://www.pacoreyes.de/es/" />
+  ```
+- **Sitemap.xml**: XML sitemap with language-specific URLs and priority settings
+- **Robots.txt**: Controls search engine crawling behavior
+
+### Content Strategy
+
+- **Localized Content**: Each language version has fully translated and culturally adapted content
+- **Language-specific Metadata**: Titles, descriptions, and keywords are optimized for each language
+- **Consistent Structure**: All language versions maintain the same structure for better user experience
 
 ## License
 
-This project is licensed under the MIT License. See `LICENSE` for more details.
-
-Thank you for visiting my personal website repository!
+ISC

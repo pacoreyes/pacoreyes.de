@@ -1,0 +1,183 @@
+{
+  "projects": [
+    {
+      "name": "docuRAG",
+      "description": "Project4 is a collaborative design archive showcasing interdisciplinary student work ...",
+      "thumbnail": "images/empty_thumb.png",
+      "picture1": "images/empty_pic1.png",
+      "picture2": "images/empty_pic2.png",
+      "picture3": "images/empty_pic3.png",
+      "picture4": "images/empty_pic4.png",
+      "technologies": [
+        "Retrieval-Augmented Generation",
+        "Embeddings",
+        "FastAPI",
+        "LlamaIndex",
+        "LlaMA 2",
+        "Docker",
+        "Terraform",
+        "Next.js",
+        "LLM",
+        "Generative AI",
+        "Python",
+        "JS"
+      ]
+    },
+    {
+      "name": "OntoLoop",
+      "description": "Project4 is a collaborative design archive showcasing interdisciplinary student work ...",
+      "thumbnail": "images/empty_thumb.png",
+      "picture1": "images/empty_pic1.png",
+      "picture2": "images/empty_pic2.png",
+      "picture3": "images/empty_pic3.png",
+      "picture4": "images/empty_pic4.png",
+      "technologies": [
+        "Embeddings",
+        "FastAPI",
+        "LlamaIndex",
+        "Llama 2",
+        "Docker",
+        "Terraform",
+        "Next.js",
+        "LLM",
+        "Python",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "webCrawler",
+      "description": "Project4 is a collaborative design archive showcasing interdisciplinary student work ...",
+      "thumbnail": "images/empty_thumb.png",
+      "picture1": "images/empty_pic1.png",
+      "picture2": "images/empty_pic2.png",
+      "picture3": "images/empty_pic3.png",
+      "picture4": "images/empty_pic4.png",
+      "technologies": [
+        "Web Crawling",
+        "Web Scraping",
+        "NLP",
+        "Flask",
+        "BeautifulSoup",
+        "Firebase"
+
+      ]
+    },
+    {
+      "name": "annotationNLP",
+      "description": "Project5 is a digital tool developed to analyze historical documents using AI-based text recognition ...",
+      "thumbnail": "images/empty_thumb.png",
+      "picture1": "images/empty_pic1.png",
+      "picture2": "images/empty_pic2.png",
+      "picture3": "images/empty_pic3.png",
+      "picture4": "images/empty_pic4.png",
+      "technologies": [
+        "Django",
+        "TensorFlow",
+        "OpenCV"
+      ]
+    },
+    {
+      "name": "ObPolDis",
+      "description": "Observatory of Political Discourse (ObPolDis) is a website ...",
+      "thumbnail": "images/obpoldis_thumb.png",
+      "picture1": "images/obpoldis_pic1.png",
+      "picture2": "images/empty_pic2.png",
+      "picture3": "images/empty_pic3.png",
+      "picture4": "images/empty_pic4.png",
+      "technologies": [
+        "Information Extraction",
+        "Knowledge Graph",
+        "SVO triples",
+        "BeautifulSoup",
+        "Web Scraping",
+        "JavaScript",
+        "Python",
+        "spaCy",
+        "Firebase",
+        "Eleventy"
+      ]
+    },
+    {
+      "name": "ieApp",
+      "description": "Project2 is a platform that explores ...",
+      "thumbnail": "images/empty_thumb.png",
+      "picture1": "images/empty_pic1.png",
+      "picture2": "images/empty_pic2.png",
+      "picture3": "images/empty_pic3.png",
+      "picture4": "images/empty_pic4.png",
+      "technologies": [
+        "Information Extraction",
+        "Web Scraping",
+        "Neo4j",
+        "BeautifulSoup"
+      ]
+    },
+    {
+      "name": "Text Classification",
+      "description": "Project3 is an interactive visualization tool for exploring urban data ...",
+      "thumbnail": "images/empty_thumb.png",
+      "picture1": "images/empty_pic1.png",
+      "picture2": "images/empty_pic2.png",
+      "picture3": "images/empty_pic3.png",
+      "picture4": "images/empty_pic4.png",
+      "technologies": [
+        "Computational Linguistics",
+        "NLP",
+        "BERT",
+        "Dataset",
+        "Explainable AI",
+        "LLM",
+        "SHAP",
+        "Hugging Face",
+        "Python",
+        "spaCy",
+        "Optuna"
+      ]
+    },
+
+    {
+      "name": "Stance Classification",
+      "description": "Project6 is a web-based simulation that models ecological systems in real-time for educational purposes ...",
+      "thumbnail": "images/empty_thumb.png",
+      "picture1": "images/empty_pic1.png",
+      "picture2": "images/empty_pic2.png",
+      "picture3": "images/empty_pic3.png",
+      "picture4": "images/empty_pic4.png",
+      "technologies": [
+        "Computational Linguistics",
+        "NLP",
+        "SetFit",
+        "LLM",
+        "Explainable AI",
+        "Dataset",
+        "SHAP",
+        "Hugging Face",
+        "Python",
+        "Firebase",
+        "Embeddings"
+
+      ]
+    },
+
+    {
+      "name": "Topic Continuity Analysis",
+      "description": "Project6 is a web-based simulation that models ecological systems in real-time for educational purposes ...",
+      "thumbnail": "images/empty_thumb.png",
+      "picture1": "images/empty_pic1.png",
+      "picture2": "images/empty_pic2.png",
+      "picture3": "images/empty_pic3.png",
+      "picture4": "images/empty_pic4.png",
+      "technologies": [
+        "Computational Linguistics",
+        "NLP",
+        "BERT",
+        "LLM",
+        "Explainable AI",
+        "Dataset",
+        "Sentence Pair Modeling",
+        "Transformers Interpret",
+        "spaCy"
+      ]
+    }
+  ]
+}

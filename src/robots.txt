@@ -1,0 +1,10 @@
+# robots.txt for pacoreyes.de
+
+User-agent: *
+# Disallow indexing of the root index page
+Disallow: /index.html
+# Allow all other content
+Allow: /
+
+# Sitemap
+Sitemap: https://www.pacoreyes.de/sitemap.xml

@@ -1,0 +1,225 @@
+---
+layout: page.njk
+title: Juan-Francisco (Paco) Reyes | AI Engineer
+description: I’m an AI Engineer and machine-learning expert focused on NLP and LLMs to bridge human–machine communication. I build AI products, work in international research teams, and explore XAI, computational linguistics, and information extraction.
+keywords: Juan-Francisco Reyes, Paco Reyes, AI Engineer, Machine Learning Engineer, NLP, Natural Language Processing, Large Language Models, LLMs, Computational Linguistics, Information Extraction, Explainable AI, XAI, AI Product Development, MLOps, LLMOps, Generative AI, AI Infrastructure, Prompt Engineering
+author: Juan-Francisco (Paco) Reyes
+---
+
+
+<section id="hero">
+  <div class="container">
+    <h1>Juan-Francisco (Paco) Reyes</h1>
+    <p><strong>AI Engineer | PhD Candidate</strong></p>
+    <p>AI Engineer and NLP researcher with a background in Human-Computer Interaction and full-stack development. I specialize in building machine learning and generative AI solutions powered by Large Language Models (LLMs), and have hands-on experience in MLOps for deploying these models. I design and develop AI products that bridge human–machine communication with a focus on automation, and explainability, combining computational linguistics with solid software engineering and user-centered design.</p>
+    <p>&#x2794; <a href="reyes_cv_en_nlp_2024_anonym.pdf" target="_blank">Download CV</a> (<span  class="pdf-text">PDF</span>, 134 KB, 2 pages)</p>
+  </div>
+</section>
+
+
+<section class="doc">
+  {% block content %}
+
+  <section id="experience">
+
+    <h2>Professional Experience</h2>
+    <h3>Academic Researcher & Lecturer</h3>
+    <p><em>Brandenburgische Technische Universität (BTU)</em>, Cottbus, Germany</p>
+    <p class="experience-date">April 2020 — March 2024</p>
+    <ul>
+      <li><p>Led research on explainable AI (XAI) in NLP, developing three models and datasets published on Hugging Face, enhancing transparency in LLM-based political text analysis, resulting in the publication of three peer-reviewed papers on computational linguistics.</p></li>
+      <li><p>Co-authored the book <em><a href="https://webengineering.netlify.app/js-firebase/" target="_blank">Learn how to Build Web Apps with JS and Cloud Firebase</a></em>, focusing on object-oriented programing (OOP) development using serverless web technologies and the NoSQL Firestore. The book was used to lecture the course <em>Web Applications</em>, using JavaScript, Node.js, Python, and Flask.</p></li>
+      <li><p>Designed and lectured the <em><a href="https://ie-seminar.web.app" target="_blank">NLP for Information Extraction</a></em> course, integrating tools like spaCy and Hugging Face Transformers, resulting in an increase in student enrollment over four years. Also, lecture of the course <em>Web Documents</em>, covering fundamentals and modern techniques in web documents, including HTML, XML, CSS, SEO, accessibility, performance, and others.</p></li>
+      <li><p>Supervised two Ms.C. theses in NLP and Information Extraction and interdisciplinary student projects combining NLP and web development, fostering practical skills in data extraction and analysis.</p></li>
+    </ul>
+
+    <h3>Founder, Director, Front-End Developer, UX Designer</h3>
+    <p><em>Talámica Øptimization</em> (UX agency), Lima, Peru</p>
+    <p class="experience-date">November 2014 — February 2020</p>
+    <ul>
+      <li><p>Front-end development of marketing channels with focus on user experience across diverse industries, including media, finance, banking, e-commerce, education, and startups. Examples, ScotiaBank Peru, CENTRUM University, Pacífico Seguros, Mi Media Manzana, Utilex, and others.</p></li>
+      <li><p>Front-end development, primarily utilizing JavaScript, HTML, and CSS to enhance user interfaces through interaction design techniques, ensuring engaging and intuitive user experiences with web technologies.</p></li>
+      <li><p>Orchestrated a team of web developers and UX designers, fostering a collaborative environment focused on web experiences and business goals.</p></li>
+      <li><p>Directed end-to-end UX design, from user research to implementation, using diverse methods (e.g., surveys, analytics, usability testing) to develop and validate prototypes, and communicated strategic insights to clients to ensure alignment and impact.</p></li>
+    </ul>
+
+    <h3>User Experience Director</h3>
+    <p><em>Wunderman Thompson</em> (Digital agency), Lima, Peru</p>
+    <p class="experience-date">August 2013 — October 2014</p>
+    <ul>
+      <li><p>Played a pivotal role in client pitches, demonstrating a deep understanding of user needs, which
+          significantly boosted client confidence and contributed to a 30% increase in annual sales in 2014 and a
+          further 40% in 2015, totaling a revenue uplift of $500K.</p></li>
+      <li><p>Recruited and led the UX team in adopting a evidence-based approach to design, where decisions were driven by cognitive
+          psychology and user research.</p></li>
+      <li><p>Guided a critical initiative to overhaul production processes, leading to a 7% reduction in time-to-market
+          and an 11% increase in client satisfaction by embedding user-centered design principles (with a focus on
+          prototyping) throughout all web and mobile development stages, including account management.</p></li>
+    </ul>
+
+    <h3>Graduate Assistant Researcher & Developer</h3>
+    <p><em>University of Baltimore</em>, Maryland, U.S.A.</p>
+    <p class="experience-date">September 2011 — July 2013</p>
+    <ul>
+      <li><p>Developed <em><a href="https://www.behance.net/gallery/6626279/Langsdale-on-the-Go-University-of-Baltimore" target="_blank">Langsdale on the Go!</em></a>, a serverless web application using HTML, CSS, and JavaScript, integrating
+          multiple APIs to locate books in the library, featuring a book locator that displayed a map with the exact
+          shelf where a resource was located.</p></li>
+      <li><p>Designed the interaction experience using core web design principles and validated using research methods
+          such as usability testing, interviews, and observation, enhancing the library patrons' satisfaction, with a documented <a href="https://issuu.com/langsdale/docs/2013_report" target="_blank">increase in adoption rates</a>.</p></li>
+
+      <li><p>Recognized by university authorities for pioneering innovation in digital library services and featured at the <a href="https://www.infotoday.com/il2012/Tuesday.asp" target="_blank">Internet Librarian 2012</a> Conference (Monterey, California—U.S.A.).</p></li>
+      <li><p>Developed a compelling <a href="https://www.behance.net/juan_francisco_reyes" target="_blank">portfolio in Interaction Design and Information Architecture</a>.</p></li>
+    </ul>
+  </section>
+
+  <section id="projects">
+      <h2>AI & NLP Projects & Research</h2>
+      <div class="projects-grid">
+        {% for project in projects.projects %}
+        <div class="project-item">
+          <h3 data-project-index="{{ loop.index0 }}">{{ project.name }}</h3>
+          <div class="project-thumbnail">
+            <img src="/{{ project.thumbnail }}" alt="{{ project.name }}" class="project-thumb-img" data-project-index="{{ loop.index0 }}">
+          </div>
+          <div class="skills-container">
+            <p>
+              {% for tech in project.technologies %}
+                <span>{{ tech }}</span>
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Hidden element with projects data for JavaScript -->
+      <script type="application/json" id="projects-data">
+        {{ projects | dump | safe }}
+      </script>
+    </section>
+
+    <!-- Lightbox for projects -->
+    <div id="project-lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-container">
+          <div class="lightbox-image-container">
+            <img id="lightbox-image" src="" alt="Project image">
+            <div class="image-navigation">
+              <button id="prev-image" class="nav-button">&lt;</button>
+              <button id="next-image" class="nav-button">&gt;</button>
+            </div>
+          </div>
+          <div class="lightbox-details">
+            <h3 id="lightbox-title"></h3>
+            <div id="lightbox-description"></div>
+            <div id="lightbox-technologies" class="skills-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <section class="doc">
+    <h2>Education</h2>
+    <ul>
+      <li><h3>Ph.D. Candidate, Computer Science</h3>
+      <p><em>Brandenburgische Technische Universität (BTU)</em>, Cottbus, Germany. | <span class="experience-date">2025 (expected) </span></p>
+      <p>Thesis: <em>Explaining Large Language Models for Passage-Level Political Statement Extraction Using Linguistic Rule-Based Models</em>, supervised by Professor Gerd Wagner.</p></li>
+
+
+      <li><h3>M.Sc. Interaction Design and Information Architecture (<a href="https://www.ubalt.edu/cas/graduate-programs-and-certificates/degree-programs/masters-interaction-design-and-information-architecture/" target="_blank">IDIA</a>)</h3>
+      <p><em>University of Baltimore</em>, Maryland, U.S.A. | <span class="experience-date">2016</span></p>
+      <p>Thesis: <em><a href="https://doi.org/10.13016/M2X25M" target="_blank">Effect of Emotion on Marketing
+              Landing Page Conversion</a></em>, supervised by <a
+              href="https://www.ubalt.edu/cas/faculty/alphabetical-directory/kathryn-summers.cfm" target="_blank">Professor
+            Kathryn Summers</a>.</p></li>
+
+      <li><h3>B.Sc. Social Communications, Major in Audiovisual Communication</h3>
+      <p><em>Universidad Nacional Mayor de San Marcos (UNMSM)</em>, Lima, Peru | <span class="experience-date">2006</span></p></li>
+    </ul>
+  </section>
+
+  <section class="doc">
+    <h2>Skills</h2>
+    <div>
+      <ul>
+        {% for category, skillsList in skills %}
+          <li><p>{{ category }}: {% for skill in skillsList %}<span class="individual_skill">{{ skill }}</span>{% endfor %}</p></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li><h3>AI Explainability in Classifying Political Speeches and Interviews</h3>
+      <p><em>Journal of Language Technology and Computational Linguistics (JLCL)</em>, under review | <span class="experience-date">2025</span></p></li>
+
+      <li><h3>Explainable Subjective Stance Classification with SetFit in Political Discourse</h3>
+      <p><em>Journal of Language Technology and Computational Linguistics (JLCL)</em>, under review | <span class="experience-date">2025</span></p></li>
+
+      <li><h3>Explainable Topic Continuity in Political Discourse: A Sentence Pair BERT Model Analysis</h3>
+      <p><em>International Journal of Computational Linguistics (IJCL)</em> | <span class="experience-date">2025</span></p></li>
+    </ul>
+  </section>
+
+  <section id="awards">
+    <h2>Awards and Honors</h2>
+    <ul>
+      <li><p>First in class of 23 students graduating, undergraduate studies at UNMSM, Valedictorian, (2006).</p></li>
+      <li><p>EducationUSA Opportunity Grants (Fulbright Peru), awarded financial aid for application process to graduate
+          studies, (2007).</p></li>
+      <li><p>Graduate Assistant at Langsdale Library at University of Baltimore, full scholarship for Master’s studies,
+          (2011).</p></li>
+      <li><p>Turner Research and Travel Award from University of Baltimore (2012).</p></li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li><h3>Certified Usability Analyst, <a href="https://hfi.training/na/certifications/cua" target="_blank">HFI CUA</a>™</h3>
+      <p><em>Human Factors International</em>, credential #2010-2559 | <span class="experience-date">2010</span></p></li>
+
+      <li><h3>Certified User Experience Analyst - <a href="https://hfi.training/in/certifications/cxa" target="_blank">HFI CXA</a>™</h3>
+      <p><em>Human Factors International</em>, credential #2015-327 | <span class="experience-date">2015</span></p></li>
+    </ul>
+  </section>
+
+  <section id="languages">
+    <h2>Languages</h2>
+    <ul>
+      <li><p>English: <em>Full professional proficiency</em>.</p></li>
+      <li><p>Spanish: <em>Native</em>.</p></li>
+      <li><p>German: <em>B1 TELC</em> | <span class="experience-date">SEPT 2015 (EXPECTED)</span>.</p></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>About Me</h2>
+    <p>With over 4+ years of experience in AI and machine learning, I’ve worked on real-world challenges through interdisciplinary projects in both academic and applied settings. My expertise spans machine learning engineering, NLP research, and AI product development, with a strong focus on model explainability and NLP automation.</p>
+  <section>
+
+  <section id="personal-information">
+    <h2>Personal Information</h2>
+    <ul>
+      <li><p>Address: <em>Cottbus, Brandenburg, Germany</em></p></li>
+      <li><p>Email: <em>pacoreyes [at] protonmail [dot] com</em></p></li>
+      <li><p>ORCID: <a href="https://orcid.org/0000-0003-4291-6933" target="_blank">0000-0003-4291-6933</a></p></li>
+      <li><p>LinkedIn: <a href="https://linkedin.com/in/juanfranciscoreyes" target="_blank">linkedin.com/in/juanfranciscoreyes</a>
+        </p></li>
+      <li><p>GitHub: <a href="https://github.com/pacoreyes" target="_blank">github.com/pacoreyes</a></p></li>
+      <li><p>Hugging Face: <a href="https://huggingface.co/pacoreyes" target="_blank">huggingface.co/pacoreyes</a></p>
+      </li>
+      <li><p>Google Scholar: <a href="https://scholar.google.de/citations?hl=en&user=8tE5bKEAAAAJ" target="_blank">scholar.google.de/citations?hl=en&user=8tE5bKEAAAAJ</a></p></li>
+      <li><p>ResearchGate: <a href="https://www.researchgate.net/profile/Juan-Francisco-Reyes" target="_blank">researchgate.net/profile/Juan-Francisco-Reyes</a>
+        </p></li>
+      <!--li><p>X: <a href="https://x.com/pacoreyes" target="_blank">x.com/pacoreyes</a></p></li>
+      <li><p>Facebook: <a href="https://www.facebook.com/juan.francisco.paco.reyes" target="_blank">facebook.com/juan.francisco.paco.reyes</a></p></li>
+      <li><p>Instagram: <a href="" target="_blank"></a></p></li-->
+    </ul>
+  </section>
+
+{% endblock %}
+</section>

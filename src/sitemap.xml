@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.pacoreyes.de/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- English pages -->
+  <url>
+    <loc>https://www.pacoreyes.de/en/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- German pages -->
+  <url>
+    <loc>https://www.pacoreyes.de/de/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+  <!-- Spanish pages -->
+  <url>
+    <loc>https://www.pacoreyes.de/es/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+</urlset>

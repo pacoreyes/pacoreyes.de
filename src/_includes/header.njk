@@ -1,16 +1,22 @@
 <header>
   <div class="top-bar">
-    <a class="logo" href="/">Paco</a>
-    <div id="nav-icon">
-      <span></span>
-      <span></span>
-      <span></span>
+    <a class="logo" href="{{ site.url }}/"><img src="/images/paco_reyes_logo.webp" alt="nodes AI" width="40" height="40"></a>
+    <div class="language-selector">
+      {% set currentLanguage = page.url | getLanguage %}
+      <a href="{{ site.url }}/en{{ page.url | stripLanguage }}" class="lang-link {% if currentLanguage == 'en' %}active{% endif %}">EN</a>
+      <a href="{{ site.url }}/de{{ page.url | stripLanguage }}" class="lang-link {% if currentLanguage == 'de' %}active{% endif %}">DE</a>
+      <a href="{{ site.url }}/es{{ page.url | stripLanguage }}" class="lang-link {% if currentLanguage == 'es' %}active{% endif %}">ES</a>
     </div>
+    <div class="social-links">
+            <a href="https://github.com/pacoreyes" target="_blank" rel="noopener noreferrer">
+              <img src="/images/github-logo.webp" alt="GitHub" width="32" height="32">
+            </a>
+            <a href="https://huggingface.co/pacoreyes" target="_blank" rel="noopener noreferrer">
+              <img src="/images/hugging-face-logo.webp" alt="LinkedIn" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com/in/juanfranciscoreyes/" target="_blank" rel="noopener noreferrer">
+              <img src="/images/linkedin_logo.webp" alt="LinkedIn" width="32" height="32">
+            </a>
+          </div>
   </div>
-  <nav hidden="hidden" id="menu-tray">
-    <ul>
-      <li><a href="/curriculum-vitae" >CV</a></li>
-      <li><a href="/portfolio">Portfolio</a></li>
-    </ul>
-  </nav>
 </header>
