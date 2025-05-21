@@ -411,7 +411,7 @@ p.table-note {
 .heading-text {
     margin-bottom: 15px;
     font-weight: bold;
-    color: #657585; /* Cold gray color */
+    color: #586b81; /* Darker gray color for better contrast */
 }
 
 /* --------- main content ----------- */
@@ -462,7 +462,7 @@ header a {
 
 /* PDF text style */
 .pdf-text {
-    color: red;
+    color: #bc4040;
 }
 
 /* Experience description paragraph */
@@ -511,7 +511,7 @@ header a {
 
 .footer-column h3 {
     /* Apply the heading-text class styles */
-    color: #657585; /* Cold gray color */
+    color: #586b81; /* Darker gray color for better contrast */
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 16px; /* Same as links */
@@ -569,7 +569,7 @@ header .social-links a {
 }
 
 .lang-link {
-    color: #657585 !important; /* Gray color for inactive languages */
+    color: #586b81 !important; /* Darker gray color for better contrast */
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -637,20 +637,22 @@ div.skills p, .skills-container p {
 }
 
 div.skills span, .skills-container span {
-    background-color: #E3E9EF;
+    background-color: #e4ebec;
     padding: 0.3em 0.4em;
     margin: 0 0.1em;
     border-radius: 0.2em;
+    color: #000000;
 }
 
 .individual_skill {
-    background-color: #E3E9EF;
+    background-color: #e4ebec;
     line-height: 2.2em;
     font-size: 0.8em;
     font-family: sans-serif;
     padding: 0.3em 0.4em;
     margin: 0 0.1em;
     border-radius: 0.2em;
+    color: #000000;
 }
 
 .project-item .skills-container {
@@ -667,7 +669,7 @@ div.skills span, .skills-container span {
 }
 
 .experience-date {
-    color: #657585;
+    color: #586b81;
     text-transform: uppercase;
     font-size: 14px;
     font-family: sans-serif;
