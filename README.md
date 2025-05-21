@@ -44,7 +44,13 @@ This repository contains the source code for my personal website, [pacoreyes.de]
    npm install
    ```
 
-3. Start the development server:
+3. Create a `.env` file in the project root with the following content:
+   ```
+   GOOGLE_TAG_ID=your-google-tag-id
+   ```
+   Replace `your-google-tag-id` with your actual Google Analytics tag ID.
+
+4. Start the development server:
    ```bash
    npm start
    ```
@@ -60,7 +66,20 @@ npm run build
 
 ## Deployment
 
-The website is deployed to Firebase Hosting. After building the site:
+### Setting Environment Variables
+
+Before deploying, ensure that the required environment variables are set in your production environment:
+
+1. For Firebase Hosting, you can set environment variables using Firebase Functions environment configuration:
+   ```bash
+   firebase functions:config:set analytics.google_tag_id="your-google-tag-id"
+   ```
+
+2. Alternatively, you can set the environment variable directly in your CI/CD pipeline or hosting platform.
+
+### Deploy to Firebase
+
+After building the site:
 
 ```bash
 firebase deploy

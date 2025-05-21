@@ -1,6 +1,9 @@
 const beautifyHtml = require('js-beautify').html;
 const { DateTime } = require("luxon");
 
+// Load environment variables from .env file
+require('dotenv').config();
+
 // Set environment variable if not already set
 process.env.ELEVENTY_ENV = process.env.ELEVENTY_ENV || 'development';
 const isProduction = process.env.ELEVENTY_ENV === 'production';

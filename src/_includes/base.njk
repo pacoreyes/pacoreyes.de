@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ environment.googleTagId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ environment.googleTagId }}');
+  </script>
+
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="description" content="{{ description | default(site.description) }}"/>
@@ -98,12 +108,12 @@
 </head>
 <body>
   {% include "header.njk" %}
-<main>
-  {{ content | safe }}
-</main>
-<footer>
-  {% include "footer.njk" %}
-</footer>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>
+    {% include "footer.njk" %}
+  </footer>
 
 </body>
 </html>
