@@ -34,7 +34,8 @@
     "Statistical Analysis",
     "Information Extraction",
     "Computational Linguistics",
-    "Machine Learning"
+    "Machine Learning",
+    "Knowledge Graph"
   ],
   "Cloud and MLOps": [
     "AWS",
@@ -42,8 +43,7 @@
     "Docker",
     "Pinecone",
     "FAISS",
-    "Neo4j",
-    "Knowledge Graph"
+    "Neo4j"
   ],
   "User Research": [
     "UX",
