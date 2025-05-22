@@ -565,7 +565,7 @@ header .social-links a {
 .language-selector {
     display: flex;
     gap: 10px;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
 }
 
 .lang-link {
@@ -790,7 +790,7 @@ div.skills span, .skills-container span {
 }
 
 .language-nav a:hover {
-    color: #1F4AE7;
+    color: #0077cc;
     text-decoration: underline;
 }
 
