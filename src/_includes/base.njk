@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ environment.googleTagId }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZM81XJQS4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '{{ environment.googleTagId }}');
+    gtag('config', 'G-HZM81XJQS4');
   </script>
 
   <meta charset="UTF-8"/>
@@ -16,6 +16,10 @@
   <meta name="description" content="{{ description | default(site.description) }}"/>
   <meta name="keywords" content="{{ keywords | default('') }}"/>
   <meta name="author" content="{{ author | default(site.author) }}"/>
+
+  <link rel="stylesheet" href="/css/styles.css"/>
+  <script type="module" src="/js/main.mjs" defer></script>
+
   <title>{{ title }}</title>
 
   <!-- Favicon -->
@@ -48,9 +52,6 @@
   <meta property="og:locale" content="{{ site.locale }}"/>
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
-  <link rel="stylesheet" href="/css/styles.css"/>
-
-  <script type="module" src="/js/main.mjs" defer></script>
 
   {% if noindex %}
     <meta name="robots" content="noindex"/>
